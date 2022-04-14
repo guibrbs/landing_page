@@ -1,6 +1,22 @@
 .logo img{
     width: 40px;
+    margin-right: .6rem;
+    margin-top: -0.6rem;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
 .container{
     position: relative;
     max-width: 81rem;
@@ -8,4 +24,10 @@
     margin: 0 auto;
     padding: 0 3rem;
     z-index: 10;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
