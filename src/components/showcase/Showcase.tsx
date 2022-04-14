@@ -1,5 +1,6 @@
 import React from "react";
 import Person from '../../assets/images/person.png'
+import './Showcase.css'
 
 export default function ShowCase(){
     return(
