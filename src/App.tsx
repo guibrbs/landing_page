@@ -1,6 +1,6 @@
 import './App.css'
-import NavBar from './components/navbar/navbar'
-import ShowCase from './components/showcase/showcase'
+import NavBar from './components/navbar/Navbar'
+import ShowCase from './components/showcase/Showcase'
 
 function App() {
   return (
