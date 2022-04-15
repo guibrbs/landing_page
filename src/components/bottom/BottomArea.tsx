@@ -1,4 +1,5 @@
 import React from "react";
+import './BottomArea.css'
 
 export default function BottomArea(){
     return(
