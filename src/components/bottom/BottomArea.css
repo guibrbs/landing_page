@@ -16,10 +16,22 @@
     line-height: 39px;
 }
 
-.toggle-btn i:last-child{
+.toggle-btn:hover{
+    background: var(--mainColor);
+}
+
+.big-wrapper.light .toggle-btn i:last-child{
     display: none;
 }
 
-.toggle-btn:hover{
-    background: var(--mainColor);
+.big-wrapper.light .toggle-btn i:first-child{
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:last-child{
+    display: block;
+}
+
+.big-wrapper.dark .toggle-btn i:first-child{
+    display: none;
 }

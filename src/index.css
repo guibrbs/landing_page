@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root{
+.light{
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #f1f8fc;
@@ -8,6 +8,16 @@
   --darkTwo: #45424b;
   --lightOne: #919191;
   --lightTwo: #aaa;
+}
+
+.dark{
+  --mainColor: #64bcf4;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #192e3a;
+  --darkOne: #f3f3f3;
+  --darkTwo: #fff;
+  --lightOne: #ccc;
+  --lightTwo: #e7e3e3;
 }
 
 *,  *::before, *::after{

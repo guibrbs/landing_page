@@ -1,13 +1,13 @@
 import React from "react";
 import './BottomArea.css'
 
-export default function BottomArea(){
+export default function BottomArea({ setProps }){
     return(
         <div className="bottom-area">
             <div className="container">
                 <button className="toggle-btn">
-                    <i className="fa-regular fa-moon"></i>
-                    <i className="fa-regular fa-sun"></i>
+                    <i onClick={(e) => setProps(0)} className="fa-regular fa-moon"></i>
+                    <i onClick={(e) => setProps(1)} className="fa-regular fa-sun"></i>
                 </button>
             </div>
         </div>
