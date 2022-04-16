@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo  from '../../assets/images/logo.png'
 import './Navbar.css'
 
-export default (props :any) => {
+export default function Navbar(){
+    const [menu, setMenu] = useState(0)
+    function setDisplay(){
+        if(menu){
+            setMenu(0)
+        }
+        else{
+            setMenu(1)
+        }
+    }
     return(
         <header>
-            <div className="container">
+            <div className={menu ? "container active" : "container"}>
                 <div className="logo">
                     <img src={Logo} alt="Logo" />
                     <h3>Danvo</h3>
@@ -18,9 +27,9 @@ export default (props :any) => {
                         <li><a href="" className="btn">Sign up</a></li>
                     </ul>
                 </div>
-                <div className="hamburguer-menu">
+                <div className="hamburguer-menu" onClick={(e) => setDisplay()}>
                     <div className="bar">
-                        
+
                     </div>
                 </div>
             </div>
