@@ -27,6 +27,9 @@ export default function Navbar(){
                         <li><a href="" className="btn">Sign up</a></li>
                     </ul>
                 </div>
+                <div className="overlay">
+                    
+                </div>
                 <div className="hamburguer-menu" onClick={(e) => setDisplay()}>
                     <div className="bar">
 
