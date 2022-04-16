@@ -18,3 +18,33 @@
     left: -15px;
     opacity: 0.1;
 }
+
+.from-top{
+    z-index: 100;
+    animation: appear-fromTop 1s 1 ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes appear-fromTop{
+    0%{
+        clip-path: circle(30% at -25% -25%);
+    }
+    100%{
+        clip-path: circle(150% at 0 0);
+    }
+  }
+
+  .from-bottom{
+      z-index: 100;
+      animation: appear-fromBottom 1.2s 1 ease-in-out;
+      animation-fill-mode: both;
+  }
+
+  @keyframes appear-fromBottom{
+    0%{
+        clip-path: circle(30% at 125% 125%);
+    }
+    100%{
+        clip-path: circle(150% at 0 0);
+    }
+  }

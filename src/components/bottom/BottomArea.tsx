@@ -1,7 +1,7 @@
 import React from "react";
 import './BottomArea.css'
 
-export default function BottomArea({ setProps }){
+export default function BottomArea({ setProps }: { setProps: any }){
     return(
         <div className="bottom-area">
             <div className="container">

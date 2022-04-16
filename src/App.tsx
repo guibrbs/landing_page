@@ -8,7 +8,7 @@ import { useState } from 'react'
 function App() {
   const [theme, setTheme] = useState(0)
   return (
-    <div className= {theme ? "big-wrapper light" : "big-wrapper dark"}>
+    <div className= {theme ? "big-wrapper light from-top" : "big-wrapper dark from-bottom"}>
       <img src={Shape} alt="Shape" className='shape'/>
       <NavBar />
       <ShowCase />
