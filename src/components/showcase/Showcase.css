@@ -31,9 +31,36 @@
 @media screen and (max-width: 870px) {
     .showcase-area .container{
         grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 2rem;
     }
+
+    .showcase-area{
+        padding: 2.5rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .big-title{
+        font-size: 1.1rem;
+    }
+
+    .text{
+        font-size: 0.95rem;
+        margin: 1.4rem 0 1.5rem;
+    }
+
     .person{
         width: 100%;
         transform: none;
+    }
+
+    .logo h3{
+        font-size: 1.25rem;
+    }
+
+    .shape{
+        bottom: -180px;
+        left: -150px;
     }
 }
