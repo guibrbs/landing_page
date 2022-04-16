@@ -27,3 +27,13 @@
     width: 140%;
     transform: translate(15%, 5vh);
 }
+
+@media screen and (max-width: 870px) {
+    .showcase-area .container{
+        grid-template-columns: 1fr;
+    }
+    .person{
+        width: 100%;
+        transform: none;
+    }
+}
