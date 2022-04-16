@@ -18,6 +18,11 @@ export default (props :any) => {
                         <li><a href="" className="btn">Sign up</a></li>
                     </ul>
                 </div>
+                <div className="hamburguer-menu">
+                    <div className="bar">
+                        
+                    </div>
+                </div>
             </div>
         </header>
     )
