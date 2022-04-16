@@ -1,3 +1,7 @@
+header{
+    position: relative;
+    z-index: 70;
+}
 .logo img{
     width: 40px;
     margin-right: .6rem;
@@ -30,10 +34,6 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.links{
-    display: none;
 }
 
 .links ul{
@@ -78,6 +78,7 @@ header .container{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    display: none;
 }
 
 .hamburguer-menu .bar{
@@ -117,4 +118,34 @@ header .container{
 
 .container.active .bar::after{
     transform: translateY(0) rotate(45deg);
+}
+
+@media screen and (max-width: 870px) {
+    .hamburguer-menu{
+        display: flex;
+    }
+    .links{
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 450px;
+        height: 100%;
+        width: 100%;
+        background-color: var(--mainColor);
+        z-index: 95;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .links ul{
+        flex-direction: column;
+    }
+    .links a{
+        color: #fff;
+        margin-left: 0;
+        padding: 2rem 0;
+    }
+    .links .btn{
+        background: none;
+    }
 }
